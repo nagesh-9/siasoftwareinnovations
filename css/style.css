@@ -26,7 +26,6 @@ header {
     padding: 15px 0;
     min-height: 70px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    position: sticky;
     top: 0;
     z-index: 1000;
     transition: background 0.3s ease;
@@ -182,7 +181,7 @@ section p {
     font-weight: 600;
 }
 
-/* Services / Apps / Courses / Contact - same layout system */
+/* Services, Courses, Contact */
 .service-list, .course-list, .contact-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -347,10 +346,12 @@ footer {
     color: #a7d9f7;
 }
 
-/* ✅ Responsive Enhancements */
-
-/* Medium Devices */
+/* Responsive Fixes - Mobile UX */
 @media (max-width: 768px) {
+    header {
+        position: relative; /* Remove sticky */
+    }
+
     header .container {
         flex-direction: column;
         align-items: center;
@@ -364,19 +365,26 @@ footer {
         background-color: #0056b3;
         width: 100%;
         padding: 10px 0;
+        position: relative;
+        z-index: auto;
     }
 
     header nav ul {
         flex-direction: column;
+        width: 100%;
     }
 
     header nav li {
-        padding: 12px 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
     }
 
     header nav a {
         font-size: 1.1em;
-        padding: 8px;
+        display: block;
+        width: 100%;
+        padding: 10px 0;
     }
 
     .footer-content {
@@ -389,9 +397,7 @@ footer {
         margin-bottom: 30px;
     }
 
-    section,
-    .app-card,
-    .simple-form {
+    section, .app-card, .simple-form {
         box-shadow: none;
         margin-bottom: 20px;
     }
@@ -422,7 +428,6 @@ footer {
     }
 }
 
-/* Small Devices */
 @media (max-width: 480px) {
     .container {
         width: 95%;
