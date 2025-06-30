@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Our Apps - SIA Software Innovations</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
     <header>
@@ -29,32 +29,48 @@
         <section id="apps-intro">
             <div class="container">
                 <h2>Our Published Applications</h2>
-                <p>SIA Software Innovations is proud to present our two applications available on the Google Play Store. We focus on developing practical and user-friendly apps that cater to various needs.</p>
+                <p>SIA Software Innovations proudly presents our published Android applications on Google Play Store. We build purposeful, practical, and user-focused apps designed to solve everyday problems and enhance productivity.</p>
             </div>
         </section>
 
         <section id="app-list">
             <div class="container">
+
+                <!-- SWIFT RECORDS -->
                 <div class="app-card">
-                    <img src="images/app1-placeholder.png" alt="App 1 Thumbnail">
-                    <h3>App Name 1 (e.g., Business Utility App)</h3>
-                    <p>A brief description of what App 1 does, its key features, and how it benefits users. Focus on its purpose and functionality.</p>
-                    <a href="#" class="btn-app" target="_blank">View on Google Play Store</a>
+                    <img src="swiftrecords.png" alt="SWIFT RECORDS Thumbnail">
+                    <h3>SWIFT RECORDS</h3>
+                    <p><strong>SWIFT RECORDS</strong> is a user-friendly offline accounting simulator for students. Designed for practical learning, it enables managing companies, ledgers, vouchers, stock items, and generating financial reports like Trial Balance, Profit & Loss, and Balance Sheet. It closely mirrors Tally’s workflow, but is optimized for classroom and home practice — no internet or login needed.</p>
+                    <ul>
+                        <li>✔ Offline ledger and voucher management</li>
+                        <li>✔ Stock adjustments and inventory tracking</li>
+                        <li>✔ Academic tool for students and educators</li>
+                        <li>✔ Daybook, Balance Sheet, and P&L generation</li>
+                    </ul>
+                    <a href="https://play.google.com/store/apps/details?id=com.nagesh.swiftrecords" class="btn-app" target="_blank">View on Google Play Store</a>
                 </div>
+
+                <!-- SIP REFINE -->
                 <div class="app-card">
-                    <img src="images/app2-placeholder.png" alt="App 2 Thumbnail">
-                    <h3>App Name 2 (e.g., Educational Tool App)</h3>
-                    <p>A brief description of what App 2 does, its key features, and how it helps users. Emphasize its educational or practical value.</p>
-                    <a href="#" class="btn-app" target="_blank">View on Google Play Store</a>
+                    <img src="siprefine.png" alt="SIP REFINE Thumbnail">
+                    <h3>SIP REFINE</h3>
+                    <p><strong>SIP REFINE</strong> is an intuitive SIP calculator with corpus visualization, designed for investors and planners. It helps users model multiple SIPs with different start/end ages, monthly amounts, and return rates. With optional SWP (withdrawal) modeling and interactive charts, it provides a clear projection of your financial goals — all calculations are done locally for privacy.</p>
+                    <ul>
+                        <li>✔ Multi-SIP modeling with custom duration & return</li>
+                        <li>✔ Optional SWP (withdrawal) planner</li>
+                        <li>✔ Charts for overall corpus and individual SIPs</li>
+                        <li>✔ No data collection, 100% local and secure</li>
+                    </ul>
+                    <a href="https://play.google.com/store/apps/details?id=com.nagesh.siprefine" class="btn-app" target="_blank">View on Google Play Store</a>
                 </div>
-                <!-- Add more app cards as you publish new applications -->
+
             </div>
         </section>
 
         <section id="future-development">
             <div class="container">
                 <h3>Committed to Continuous Innovation</h3>
-                <p>We are continuously working on new projects and improving our existing applications to deliver even greater value to our users. Stay tuned for future updates and releases!</p>
+                <p>We are actively developing new tools in the fields of education, productivity, and finance. Each application is crafted with real-world usability and user experience in mind.</p>
             </div>
         </section>
     </main>
@@ -78,7 +94,7 @@
                 </div>
                 <div class="footer-section contact-info">
                     <h3>Contact Info</h3>
-                    <p><strong>Address:</strong> 3-422, Home, Opp. Sivalayam St, Malikipuram, Konuseema, Andhra Pradesh, Pin: 533253</p>
+                    <p><strong>Address:</strong> 2-422, Opp. Sivalayam St, Malikipuram, Konaseema, Andhra Pradesh, Pin: 533253</p>
                     <p><strong>Mobile:</strong> 8106344508</p>
                     <p><strong>Email:</strong> sbvnagesh00@gmail.com</p>
                 </div>
@@ -89,6 +105,8 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script>
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
 </body>
 </html>
